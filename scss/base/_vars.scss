@@ -1,0 +1,47 @@
+:root {
+  --bg-color: #ffc5c5;
+  --envelop-color: #f17e7e;
+  --envelop-color-light: #ffbcbc;
+  --envelop-color-dark: #d35d6e;
+  --heart-color: #ef4b4b;
+  --bg-card: #fff6e9;
+  --text-dark: #191919;
+  --up-animation: up;
+  --shadow-animation: shadow-scale;
+  --heart-animation:heart;
+}
+
+@keyframes heart {
+  0% {
+    transform: translateY(0) rotate(-45deg) scale(0.3);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-150px) rotate(-45deg) scale(1.3);
+    opacity: 0.5;
+  }
+}
+
+@keyframes shadow-scale {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.85);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

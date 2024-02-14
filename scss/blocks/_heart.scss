@@ -1,0 +1,85 @@
+.hearts {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease-in-out;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five {
+  background-color: var(--heart-color);
+  display: inline-block;
+  height: 10px;
+  margin: 0 10px;
+  position: relative;
+  transform: rotate(-45deg);
+  width: 10px;
+  top: 50px;
+}
+
+.one:before,
+.one:after,
+.two:before,
+.two:after,
+.three:before,
+.three:after,
+.four:before,
+.four:after,
+.five:before,
+.five:after {
+  content: "";
+  background-color: var(--heart-color);
+  border-radius: 50%;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+}
+
+.one:before,
+.two:before,
+.three:before,
+.four:before,
+.five:before {
+  top: -5px;
+  left: 0;
+}
+
+.one:after,
+.two:after,
+.three:after,
+.four:after,
+.five:after {
+  left: 5px;
+  top: 0;
+}
+
+.one {
+  left: 10px;
+  animation: var(--heart-animation) 1s ease-out infinite;
+}
+
+.two {
+  left: 30px;
+  animation: var(--heart-animation) 2s ease-out infinite;
+}
+
+.three {
+  left: 50px;
+  animation: var(--heart-animation) 1.5s ease-out infinite;
+}
+
+.four {
+  left: 70px;
+  animation: var(--heart-animation) 2.3s ease-out infinite;
+}
+
+.five {
+  left: 90px;
+  animation: var(--heart-animation) 1.7s ease-out infinite;
+}
